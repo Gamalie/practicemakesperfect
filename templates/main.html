@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+    <meta thhp-equi='X-UA-Compatible' content='IE=edge'>
+    <title>GOC Fellowship</title>
+    <meta name='viewport' content="'width=device width,initial-scale=1">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    
+{% include 'navbar.html' %}
+
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <p>{{ message}}</p>
+    {% endfor %}
+</ul>
+    {% endif %}
+
+{%block content %}
+
+{% endblock %}
+
+
+</body>
+
+
+</html>
